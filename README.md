@@ -9,12 +9,12 @@ An Android plugin for notifications in Godot 4.x.
 4. Add the ```NotificationManager``` node to your scene
 5. Call ```NotificationManager.initialize()``` to initialize the icons for the notification. Pass the first argument as the path of the large icon and the second as the path of the small icon
 6. Call ```NotificationManager.showNotification()``` to show the notification. It takes the following arguments:<br><br>
-          a. title <- String  [The title of the notification]<br>
-          b. body <- String [The body of the notification]<br>
-          c. notification_id <- int [id of a notification] (default - 100)<br>
-          d. channel_id <- String [channel id to categorize notifications] (default - "default")<br>
-          e. largeIcon <- Texture2D [custom large icon for specific notification] (default - the initialized icon)<br>
-          f. smallIcon <- Texture2D [custom small icon for specific notification] (default - the initialized icon)<br>
+           title <- String  [The title of the notification]<br>
+           body <- String [The body of the notification]<br>
+           notification_id <- int [id of a notification] (default - 100)<br>
+           channel_id <- String [channel id to categorize notifications] (default - "default")<br>
+           largeIcon <- Texture2D [custom large icon for specific notification] (default - the initialized icon)<br>
+           smallIcon <- Texture2D [custom small icon for specific notification] (default - the initialized icon)<br><br>
 7. Make sure to include the notification permission line in your ```AndroidManifest.xml``` file in the
 
 ```
