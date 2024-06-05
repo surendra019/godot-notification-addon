@@ -18,10 +18,9 @@ An Android plugin for notifications in Godot 4.x.
 7. Make sure to include the notification permission line in your ```AndroidManifest.xml``` file in the
 
 ```
-<manifest ...>
+<manifest>
           <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-<application ...>
-...
+<application>
 </application>
 </manifest>
 ```
