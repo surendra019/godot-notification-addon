@@ -3,11 +3,11 @@ An Android plugin for notifications in Godot 4.x.
 
 # Steps to use:
 
-1. Rename the root folder to ```NotificationPlugin```.
-2. Enable the plugin from the ```Plugin``` tab in the Project Settings.
-3. Move the root folder to your project's ```res://addons/```.
-4. Add the ```NotificationManager``` node to your scene.
-5. Call ```NotificationManager.initialize()``` to initialize the icons for the notification. Pass the first argument as the path of the large icon and the second as the path of the small icon.
+1. Rename the root folder to ```NotificationPlugin```
+2. Enable the plugin from the ```Plugin``` tab in the Project Settings
+3. Move the root folder to your project's ```res://addons/```
+4. Add the ```NotificationManager``` node to your scene
+5. Call ```NotificationManager.initialize()``` to initialize the icons for the notification. Pass the first argument as the path of the large icon and the second as the path of the small icon
 6. Call ```NotificationManager.showNotification()``` to show the notification. It takes the following arguments:
      a. title <- String  [The title of the notification]
      b. body <- String [The body of the notification]
