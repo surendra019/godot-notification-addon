@@ -1,5 +1,5 @@
 # Introduction
-An Android plugin for notifications for Godot 4.x
+An Android plugin for notifications in Godot 4.x
 
 # Steps to use:
 
