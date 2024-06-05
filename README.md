@@ -30,4 +30,5 @@ The ```NotificationManager``` must be initialized once before showing any notifi
 
 # Troublesooting
 
-
+If you face an issue like ```We recommend using a newer Android Gradle plugin to use compileSdk = 33``` while building your app,
+include ```android.suppressUnsupportedCompileSdk=33``` to ```gradle.properties``` file.
