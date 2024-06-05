@@ -15,7 +15,7 @@ An Android plugin for notifications in Godot 4.x.
            channel_id <- String [channel id to categorize notifications] (default - "default")<br>
            largeIcon <- Texture2D [custom large icon for specific notification] (default - the initialized icon)<br>
            smallIcon <- Texture2D [custom small icon for specific notification] (default - the initialized icon)<br><br>
-7. Make sure to include the notification permission line in your ```AndroidManifest.xml``` file in the
+7. Make sure to include the notification permission line in your ```AndroidManifest.xml``` file in the manifest tag:
 
 ```
 <manifest>
