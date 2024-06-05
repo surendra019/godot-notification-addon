@@ -17,10 +17,15 @@ An Android plugin for notifications in Godot 4.x.
           f. smallIcon <- Texture2D [custom small icon for specific notification] (default - the initialized icon)<br>
 7. Make sure to include the notification permission line in your ```AndroidManifest.xml``` file in the
 
-```<manifest ....```<br><br>
 ```
-   <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+<manifest ...>
+          <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+<application ...>
+...
+</application>
+</manifest>
 ```
+
 # Note
 The ```NotificationManager``` must be initialized once before showing any notifications.
 
