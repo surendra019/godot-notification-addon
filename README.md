@@ -29,6 +29,8 @@ Call the `initialize()` function once in your script. It accepts the following p
 3. **`notificationMessages`**: An array of messages for periodic notifications (a random message will be shown).
 4. **`hours`** *(optional)*: The interval for periodic notifications in hours. Default is `12`.
 
+   <img src=""/>
+
 **Example:**
 ```gdscript
 $NotificationManager.initialize("res://icons/large_icon.png", "res://icons/small_icon.png", ["Hello!", "Reminder!", "Check this out!"], 6)
