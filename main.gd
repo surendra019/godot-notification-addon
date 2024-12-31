@@ -6,7 +6,7 @@ var initialized: bool = false
 var singleton
 
 
-func initialize(largeIcon: String, smallIcon: String, notificationMessages: Array = []):
+func initialize(largeIcon: String, smallIcon: String, notificationMessages: Array = [], hours: int = 12):
 	if Engine.has_singleton("NotificationPlugin"):
 		singleton = Engine.get_singleton("NotificationPlugin")
 		_large_icon_texture_2d = load(largeIcon)
@@ -20,7 +20,7 @@ func initialize(largeIcon: String, smallIcon: String, notificationMessages: Arra
 		var s_data = s_img.save_png_to_buffer()
 		var s_base_string = Marshalls.raw_to_base64(s_data)
 		
-		singleton.initialize(base_string, s_base_string, "", 10)
+		singleton.initialize(base_string, s_base_string, "", hours)
 		
 		for i in notificationMessages:
 			singleton.addContent(i)
