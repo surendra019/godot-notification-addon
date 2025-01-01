@@ -20,7 +20,7 @@ func initialize(largeIcon: String, smallIcon: String, notificationMessages: Arra
 		var s_data = s_img.save_png_to_buffer()
 		var s_base_string = Marshalls.raw_to_base64(s_data)
 		
-		singleton.initialize(base_string, s_base_string, "", hours)
+		singleton.initialize(base_string, s_base_string, "", str(hours))
 		
 		for i in notificationMessages:
 			singleton.addContent(i)
